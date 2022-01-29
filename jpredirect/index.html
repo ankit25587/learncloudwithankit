@@ -5,11 +5,13 @@
 const urlParams = new URLSearchParams(location.search);
 const couponcode = 'JP_JAN_22' 
 const udemybase = 'https://www.udemy.com/course/'
-
   
-var urlmap = new Map([["gcloud-security" , udemybase+"google-cloud-gcp-professional-cloud-security-engineer-certification/?couponCode="+couponcode], 
-                      ["lastname", "ghosh"], 
-                      ["website", "geeksforgeeks"]
+var urlmap = new Map([["gcloud-associate", udemybase+"google-cloud-gcp-associate-cloud-engineer-certification/?couponCode="+couponcode],
+                      ["gcloud-cdl", udemybase+"google-cloud-digital-leader-certification-guide/?couponCode="+couponcode],
+                      ["gcloud-security" , udemybase+"google-cloud-gcp-professional-cloud-security-engineer-certification/?couponCode="+couponcode], 
+                      ["gcloud-data", udemybase+"google-cloud-gcp-professional-data-engineer-certification/?couponCode="+couponcode],  
+                      ["gcloud-terraform", udemybase+"terraform-for-beginners-using-google-cloud/?couponCode="+couponcode],
+                      ["gcloud-cloud-function", udemybase+"google-cloud-function-serverless/?couponCode="+couponcode]
                      ]);    
 
 var course = ''
