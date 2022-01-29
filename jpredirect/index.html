@@ -3,10 +3,11 @@
 <script>
     
 const urlParams = new URLSearchParams(location.search);
-const couponcode = 'JP_JAN_22'  
+const couponcode = 'JP_JAN_22' 
+const udemybase = 'https://www.udemy.com/course/'
 
   
-var urlmap = new Map([["gcloud-security" ,"https://www.udemy.com/course/google-cloud-gcp-professional-cloud-security-engineer-certification/?couponCode=JP_JAN_22"], 
+var urlmap = new Map([["gcloud-security" , udemybase+"google-cloud-gcp-professional-cloud-security-engineer-certification/?couponCode="+couponcode], 
                       ["lastname", "ghosh"], 
                       ["website", "geeksforgeeks"]
                      ]);    
@@ -17,13 +18,10 @@ for (const [key, value] of urlParams) {
     if (key == 'course'){
         course = value
     }
-    else{
-        
-    }
     console.log(`${key}:${value}`);
     console.log(`${course}`);
 }
     
-//window.location.href = urlmap.get(course);
+window.location.href = urlmap.get(course);
     
 </script>
