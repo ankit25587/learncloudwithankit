@@ -14,8 +14,14 @@ var urlmap = new Map([["gcloud-security" ,"https://www.udemy.com/course/google-c
 var course = ''
 
 for (const [key, value] of urlParams) {
+    if (key == 'course'){
+        course = value
+    }
+    else{
+        
+    }
     console.log(`${key}:${value}`);
-    course = value
+    console.log(`${course}`);
 }
     
 window.location.href = urlmap.get(course);
